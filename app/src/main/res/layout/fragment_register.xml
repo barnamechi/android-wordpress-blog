@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.Fragments.LoginFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/register_fragment_logo_iv"
+                style="@style/LoginRegisterActivityLogoIV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/register_fragment_user_name_et"
+                    style="@style/LoginFragmentEditTextET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_name" />
+
+                <EditText
+                    android:id="@+id/register_fragment_first_name_et"
+                    style="@style/LoginFragmentEditTextET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name" />
+
+                <EditText
+                    android:id="@+id/register_fragment_last_name_et"
+                    style="@style/LoginFragmentEditTextET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name" />
+
+                <EditText
+                    android:id="@+id/register_fragment_email_et"
+                    style="@style/LoginFragmentEditTextET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email" />
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/register_fragment_phone_number_et"-->
+                <!--                    style="@style/LoginFragmentEditTextET"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="@string/phone_number" />-->
+
+                <EditText
+                    android:id="@+id/register_fragment_password_et"
+                    style="@style/LoginFragmentEditTextET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password" />
+
+                <Button
+                    android:id="@+id/register_fragment_register_btn"
+                    style="@style/LoginFragmentLoginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register" />
+
+                <TextView
+                    android:id="@+id/register_fragment_do_have_account"
+                    style="@style/LoginFragmentDontHaveAccountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_account" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

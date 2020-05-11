@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.Fragments.SinglePostFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/single_post_fragment_header_image"
+                style="@style/SinglePostFragmentHeaderImageIV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/single_post_fragment_text_container"-->
+            <!--                style="@style/SinglePostFragmentTextContainerFL"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:weightSum="5">-->
+
+
+            <!--                        <LinearLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_weight="4"-->
+            <!--                            android:orientation="vertical">-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/single_post_fragment_text_title_tv"-->
+            <!--                                style="@style/SinglePostFragmentTextTitleTV"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:text="@string/title" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/single_post_fragment_author_tv"-->
+            <!--                                style="@style/SinglePostFragmentTextSubTitleTV"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:text="@string/author" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/single_post_framgent_date_tv"-->
+            <!--                                style="@style/SinglePostFragmentTextSubTitleTV"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:text="@string/date" />-->
+            <!--                        </LinearLayout>-->
+
+
+            <!--                    </LinearLayout>-->
+
+            <!--                    &lt;!&ndash;                    <TextView&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        android:id="@+id/single_post_fragment_main_content_tv"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        style="@style/SinglePostFragmentMainContentTV"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        android:text="@string/main_content" />&ndash;&gt;-->
+            <!--    -->
+
+
+            <!--                </LinearLayout>-->
+
+            <!--            </FrameLayout>-->
+            <WebView
+                android:id="@+id/single_post_fragment_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/single_post_please_wait_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/single_post_please_wait_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/please_wait"
+            android:textColor="@color/grayDeActive" />
+    </FrameLayout>
+
+</FrameLayout>

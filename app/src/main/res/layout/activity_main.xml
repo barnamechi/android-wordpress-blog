@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/mainactivity_header"
+                android:orientation="horizontal"
+                android:padding="24dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        app:cardBackgroundColor="@color/orangeActive"
+                        app:cardCornerRadius="50dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardCornerRadius="46dp">
+
+                            <ImageView
+                                android:id="@+id/main_activity_profile_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:foregroundGravity="right"
+                                android:padding="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_launcher" />
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:foregroundGravity="center_vertical"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:id="@+id/main_activity_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:foregroundGravity="right"
+                            android:src="@mipmap/ic_launcher" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/main_activity_white_space"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/main_activity_latest_news_show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="نمایش بیشتر"
+                    android:textColor="@color/grayDeActive"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/main_activity_latest_news_title_tv"
+                    style="@style/MainActivityTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/latest_news"
+                    android:textColor="@color/grayDeActive" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/main_activity_latest_please_wait_tv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/please_wait"
+                android:textColor="@color/grayDeActive" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_activity_latest_news_recycler"
+                style="@style/MainActivityLatestNewsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayBackground"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/main_activity_social_medias_tv"
+                        style="@style/MainActivityTitleTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/social_medias" />
+
+
+                    <TextView
+                        android:id="@+id/main_activity_social_please_wait_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/please_wait"
+                        android:textColor="@color/grayDeActive" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/main_activity_social_medias_recycler"
+                        style="@style/MainActivityLatestNewsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/main_activity_newsletter_frame"
+                style="@style/MainActivityNewsletterFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <Button
+                    android:id="@+id/main_activity_newsletter_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/join_newsletter" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/main_activity_introduce_members_show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="نمایش بیشتر"
+                    android:textColor="@color/grayDeActive"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/main_activity_introduce_members_title"
+                    style="@style/MainActivityTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/introduce_leaders" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/main_activity_members_please_wait_tv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/please_wait"
+                android:textColor="@color/grayDeActive" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_activity_introduce_members_recycler"
+                style="@style/MainActivityLatestNewsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/designed_by_barnamechi_tv"
+                style="@style/MainActivityDesignedByBarnamechiTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/designed_by_barnamechi"
+                android:textSize="8sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/main_activity_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:layoutDirection="rtl"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/grayDeActive"
+        app:menu="@menu/nav_menu2" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

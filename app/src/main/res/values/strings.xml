@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AyandehSazan</string>
+    <string name="latest_news">آخرین خبرها</string>
+    <string name="social_medias">شبکه های اجتماعی</string>
+    <string name="join_newsletter">عضویت در خبرنامه</string>
+    <string name="introduce_leaders">معرفی لیدرها</string>
+    <string name="designed_by_barnamechi">طراحی شده توسط برنامه چی Barnamechi.com</string>
+    <string name="user_name">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="login">ورود</string>
+    <string name="dont_have_account">حساب کاربری ندارید؟</string>
+    <string name="have_account">حساب کاربری دارید؟</string>
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="email">ایمیل</string>
+    <string name="phone_number">شماره تماس</string>
+    <string name="register">ثبت نام</string>
+    <string name="title">عنوان</string>
+    <string name="author">نویسنده</string>
+    <string name="date">تاریخ</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="main_content">محتوای اصلی</string>
+    <string name="edit_profile">ویرایش پروفایل</string>
+    <string name="sign_out_account">خروج از حساب</string>
+    <string name="check_internet_connection">اتصال اینترنت را بررسی کنید</string>
+    <string name="no_response_from_server">پاسخی از سرور دریافت نشد!</string>
+    <string name="description">توضیحات</string>
+    <string name="logged_in_successfully">با موفقیت وارد شدید!</string>
+    <string name="stores_successfully">ذخیره سازی موفق بود</string>
+    <string name="open">باز کردن</string>
+    <string name="close">بستن</string>
+    <string name="lorem_ipsum">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+    </string>
+    <string name="no_other_pages">صفحه دیگری وجود ندارد</string>
+    <string name="please_wait">لطفا صبر کنید...</string>
+    <string name="check_entry_data">اطلاعات وارد شده را بررسی نمایید</string>
+    <string name="submitted_successfully">با موفقیت ثبت شد</string>
+
+
+</resources>

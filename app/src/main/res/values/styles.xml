@@ -1,0 +1,238 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily" tools:targetApi="jelly_bean">@font/iransans_regular</item>
+    </style>
+
+
+    <!--    Main Activity-->
+    <style name="MainActivityTitleTV">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainActivityLatestNewsRecyclerView">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="MainActivityNewsletterFrameLayout">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/gradient_main_colors</item>
+    </style>
+
+    <style name="MainActivityDesignedByBarnamechiTV">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textColor">@color/grayBackground</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--/Main Activity-->
+
+    <!--    Splash Screen-->
+    <style name="SplashScreenLogoIV">
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--/Splash Screen-->
+
+    <!--    Login Register Activity-->
+    <style name="LoginRegisterActivityLogoIV">
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!--/Login Register Activity-->
+
+    <!--Login and Register Fragment-->
+    <style name="LoginFragmentEditTextET">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">@color/grayDeActive</item>
+        <item name="android:textColorHint">@color/grayDeActive</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+    </style>
+
+    <style name="LoginFragmentLoginBtn">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:background">@color/greenActive</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="LoginFragmentDontHaveAccountTV">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">@color/orangeActive</item>
+    </style>
+    <!--/Login and Register Fragment-->
+
+    <!--    Single Post Fragment-->
+    <style name="SinglePostFragmentHeaderImageIV">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="SinglePostFragmentTextContainerFL">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="SinglePostFragmentTextTitleTV">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+
+    <style name="SinglePostFragmentTextSubTitleTV">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="SinglePostFragmentShareBTN">
+        <item name="android:background">@color/grayDeActive</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="SinglePostFragmentMainContentTV">
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/grayDeActive</item>
+    </style>
+    <!--/Single Post Fragment-->
+
+    <!--    Profile Fragment-->
+    <style name="ProfileFragmentTitleTV">
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="ProfileFragmentUserTitleTV">
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="ProfileFragmentEditProfileBTN">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+    <style name="ProfileFragmentSignOutBTN">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+    <!--/Profile Fragment-->
+
+
+    <!--    Latest News RecyclerView-->
+    <style name="LatestNewsRecyclerPhotoIV">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="LatestNewsRecyclerTitleTV">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/grayDeActiveFaded</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!--/Latest News RecyclerView-->
+
+
+    <!--    Social Medias RecyclerView-->
+    <style name="SocialMediasRecyclerPhotoIV">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+    </style>
+
+    <style name="SocialMediasRecyclerTitleTV">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">@color/grayDeActive</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_toLeftOf">@id/social_medias_recycler_photo_iv</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="SocialMediasRecyclerDescriptionTV">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textColor">@color/grayDeActive</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_toLeftOf">@id/social_medias_recycler_photo_iv</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!--/Social Medias RecyclerView-->
+
+    <!--    Members RecyclerView-->
+    <style name="MembersRecyclerPhotoIV">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="MembersRecyclerTitleTV">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/grayDeActiveFaded</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!--/Members RecyclerView-->
+
+
+</resources>
